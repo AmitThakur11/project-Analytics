@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import CardLayout from './components/CardLayout';
+import ProjectHeader from "./components/ProjectHeader"
+import LineChart from "./components/LineChart"
+import CardForm from './components/CardForm';
+import { useSelector } from 'react-redux';
 import './App.css';
-
 function App() {
+  const {addProjectForm,editProjectForm}= useSelector((state)=>state.project.toggle)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ProjectHeader/>
+    <LineChart/>
+    {(addProjectForm ||editProjectForm)  && <CardForm/>}
+    <CardLayout/>
     </div>
   );
 }

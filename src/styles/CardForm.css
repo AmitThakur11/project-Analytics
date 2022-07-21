@@ -1,0 +1,29 @@
+.cardForm{
+    position: fixed;
+    width: 100%;
+    background:rgba(205, 249, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top:0;
+    left :0;
+
+}
+.cardForm > .form{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    height: 160px;
+    width: 320px;
+    display: flex;
+    padding:10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+}
+.cardDetails__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom : 10px;
+}

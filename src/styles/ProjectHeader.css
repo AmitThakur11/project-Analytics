@@ -1,0 +1,15 @@
+.projectHeader{
+    background-color: rgb(168, 203, 243);
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 2em;
+}
+.addBtn{
+    position: absolute;
+    right: 10px;
+    top: auto;
+}
